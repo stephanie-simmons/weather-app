@@ -1,5 +1,6 @@
-
+alert("hello world");
 let now = new Date();
+console.log(now);
 let days = [
   "Sunday",
   "Monday",
@@ -18,6 +19,7 @@ let currentMinute = now.getMinutes();
 if (currentMinute < 10) {
   currentMinute = `0${currentMinute}`;
 }
+
 let today = document.querySelector("#today");
 today.innerHTML = `${currentDay} ${currentHour}:${currentMinute}`;
 
