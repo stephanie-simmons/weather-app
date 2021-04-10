@@ -32,12 +32,12 @@
                 <div class="card inner-card">
                     <div class="card-body">
                         <h2 id="search-location" class="search-location"></h2>
+                        <p class="time-update">
+                            <strong>Last updated:</strong>
+                            <span id="today"> </span>
+                        </p>
                         <div class="row">
                             <div class="col-6 display-left">
-                                <p>
-                                 <strong>Last updated:</strong>
-                                 <br> <span id="today"> </span>
-                                </p>
                                 <p class="main-temperature">
                                     <span id="temp"></span>
                                     <a href="" id="celsius">℃</a> /
@@ -48,16 +48,20 @@
                                 <p id="precipitation">
                                     Precipitation:
                                 </p>
-                            </div>
-                            <div class="col-6 display-right">
-                                <p id="main-icon">
-                                    <i class="fas fa-cloud-moon-rain main-icon" ></i>
-                                </p>
                                 <p id="wind-speed">
                                     Wind Speed:
                                 </p>
                                 <p id="humidity">
                                     Humidity:
+                                </p>
+                            </div>
+                            <div class="col-6 display-right">
+                                <p>
+                                    <img 
+                                        src="" 
+                                        alt=""
+                                        id ="main-icon"
+                                    />
                                 </p>
                             </div>
                         </div>

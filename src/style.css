@@ -83,10 +83,15 @@ input[type="submit"]:focus {
   margin-top: 5px;
 }
 
+.time-update {
+  text-align: center;
+  font-family: "Handlee", cursive;
+}
+
 .display-left p,
 .display-right {
   color: #000014;
-  line-height: 20px;
+  line-height: 12px;
   font-family: "Handlee", cursive;
   text-transform: capitalize;
 }
@@ -100,14 +105,6 @@ input[type="submit"]:focus {
   text-align: center;
   display: block;
   margin-bottom: 25px;
-}
-
-.main-icon {
-  font-size: 64px;
-  font-weight: 700;
-  color: white;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: rgb(0, 69, 109);
 }
 
 .main-temperature {

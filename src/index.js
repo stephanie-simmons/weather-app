@@ -75,9 +75,9 @@ function displayWeather(event) {
       let humidityElement = document.querySelector("#humidity");
       humidityElement.innerHTML = `Humidity: ${humidity}%`;
 
-      let icon = response.data.weather[0].main;
       let iconElement = document.querySelector("#main-icon");
-      iconElement.innerHTML = `${icon}`;
+      let icon = response.data.weather[0].icon;
+      iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
     }
 
     axios.get(`${apiURL}&appid=${apiKey}`).then(showTemperature);
@@ -144,9 +144,9 @@ function showPosition(position) {
     let humidityElement = document.querySelector("#humidity");
     humidityElement.innerHTML = `Humidity: ${humidity}%`;
 
-    let icon = response.data.weather[0].main;
     let iconElement = document.querySelector("#main-icon");
-    iconElement.innerHTML = `${icon}`;
+    let icon = response.data.weather[0].icon;
+    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
   }
   axios.get(`${apiURLCurrent}&appid=${apiKeyCurrent}`).then(showTemp);
 
