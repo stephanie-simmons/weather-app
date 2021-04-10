@@ -37,23 +37,6 @@ h2 {
   padding: 20px;
 }
 
-.city-row {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.city-row .col-2 {
-  margin: 0px 2px 0px 2px;
-}
-
-.my-citys {
-  color: rgb(0, 0, 88);
-  font-family: "Lobster", cursive;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 20px;
-}
-
 .search-bar {
   padding: 15px 15px 0 0;
   display: flex;
@@ -105,12 +88,11 @@ input[type="submit"]:focus {
   color: #000014;
   line-height: 20px;
   font-family: "Handlee", cursive;
+  text-transform: capitalize;
 }
 .display-right {
-  margin-top: -5px;
-  font-size: 24px;
   text-align: center;
-  line-height: 40px;
+  line-height: 20px;
 }
 
 .search-location {
@@ -120,8 +102,8 @@ input[type="submit"]:focus {
   margin-bottom: 25px;
 }
 
-#main-icon {
-  font-size: 36px;
+.main-icon {
+  font-size: 64px;
   font-weight: 700;
   color: white;
   -webkit-text-stroke-width: 1.5px;
@@ -132,11 +114,6 @@ input[type="submit"]:focus {
   font-size: 24px;
   font-weight: 500;
   margin-top: 15px;
-}
-
-.lo-hi {
-  line-height: 20px;
-  font-size: 14px;
 }
 
 .days p,

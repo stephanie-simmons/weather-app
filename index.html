@@ -35,23 +35,29 @@
                         <div class="row">
                             <div class="col-6 display-left">
                                 <p>
-                                 <span id="today"> Today 12:45pm </span>
+                                 <strong>Last updated:</strong>
+                                 <br> <span id="today"> </span>
                                 </p>
                                 <p class="main-temperature">
                                     <span id="temp"></span>
                                     <a href="" id="celsius">℃</a> /
                                     <a href="" id="farenheit">℉</a>
                                 </p>
+                                <p id="description">
+                                </p>
+                                <p id="precipitation">
+                                    Precipitation:
+                                </p>
+                            </div>
+                            <div class="col-6 display-right">
+                                <p id="main-icon">
+                                    <i class="fas fa-cloud-moon-rain main-icon" ></i>
+                                </p>
                                 <p id="wind-speed">
                                     Wind Speed:
                                 </p>
                                 <p id="humidity">
                                     Humidity:
-                                </p>
-                            </div>
-                            <div class="col-6 display-right">
-                                <p id="main-icon">
-                                    <i class="fas fa-cloud-moon-rain"></i>
                                 </p>
                             </div>
                         </div>
@@ -64,36 +70,24 @@
                 </div>
                 <footer>
                     <div class="row days">
-                        <div class="col-2">
-                            <p>
-                                Mon
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                Tues
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                Wed
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                Thurs
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                Fri
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                Sat
-                            </p>
-                        </div>
+                    <div class="col-2">
+                        <p id="three-hour"></p>
+                    </div>
+                    <div class="col-2">
+                        <p id="six-hour"></p>
+                    </div>
+                    <div class="col-2">
+                        <p id="nine-hour"></p>
+                    </div>
+                    <div class="col-2">
+                        <p id="twelve-hour"></p>
+                    </div>
+                    <div class="col-2">
+                        <p id="fifteen-hour"></p>
+                    </div>
+                    <div class="col-2">
+                        <p id="eighteen-hour"></p>
+                    </div>
                     </div>
 
                     <div class="row">
@@ -131,34 +125,28 @@
 
                     <div class="row temp">
                         <div class="col-2">
-                            <p>
-                                39°/70°
-                            </p>
+                            <p id="three-hour-temp"></p>
+                            <span class="degrees"></span>
                         </div>
                         <div class="col-2">
-                            <p>
-                                52°/73°
-                            </p>
+                            <p id="six-hour-temp"></p>
+                            <span class="degrees"></span>
                         </div>
                         <div class="col-2">
-                            <p>
-                                50°/77°
-                            </p>
+                            <p id="nine-hour-temp"></p>
+                            <span class="degrees"></span>
                         </div>
                         <div class="col-2">
-                            <p>
-                                48°/57°
-                            </p>
+                            <p id="twelve-hour-temp"></p>
+                            <span class="degrees"></span>
                         </div>
                         <div class="col-2">
-                            <p>
-                                50°/63°
-                            </p>
+                            <p id="fifteen-hour-temp"></p>
+                            <span class="degrees"></span>
                         </div>
                         <div class="col-2">
-                            <p>
-                                59°/66°
-                            </p>
+                            <p id="eighteen-hour-temp"></p>
+                            <span class="degrees"></span>
                         </div>
                     </div>
                 </footer>
