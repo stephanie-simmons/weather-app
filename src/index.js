@@ -177,63 +177,12 @@ function showPosition(position) {
 
       let celsius = document.querySelector("#celsius");
       celsius.addEventListener("click", convertToCelsius);
+
+      displayForecast();
   }
 
   axios.get(`${apiURLCurrent}&appid=${apiKeyCurrent}`).then(showTemp);
 
-  let apiURLForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&cnt=6`;
-  function forecast(response) {
-    console.log(response);
-
-    let threeHour = document.querySelector("#three-hour");
-    let threeHourTime = response.data.list[0].dt_txt.slice(10, 16);
-    threeHour.innerHTML = `${threeHourTime}`;
-    let threeHourTemp = document.querySelector("#three-hour-temp");
-    let forecastThreeHour = response.data.list[0].main.temp;
-    let threeHourRounded = Math.round(forecastThreeHour);
-    threeHourTemp.innerHTML = `${threeHourRounded}℃`;
-
-    let sixHour = document.querySelector("#six-hour");
-    let sixHourTime = response.data.list[1].dt_txt.slice(10, 16);
-    sixHour.innerHTML = `${sixHourTime}`;
-    let sixHourTemp = document.querySelector("#six-hour-temp");
-    let forecastSixHour = response.data.list[1].main.temp;
-    let sixHourRounded = Math.round(forecastSixHour);
-    sixHourTemp.innerHTML = `${sixHourRounded}℃`;
-
-    let nineHour = document.querySelector("#nine-hour");
-    let nineHourTime = response.data.list[2].dt_txt.slice(10, 16);
-    nineHour.innerHTML = `${nineHourTime}`;
-    let nineHourTemp = document.querySelector("#nine-hour-temp");
-    let forecastNineHour = response.data.list[2].main.temp;
-    let nineHourRounded = Math.round(forecastNineHour);
-    nineHourTemp.innerHTML = `${nineHourRounded}℃`;
-
-    let twelveHour = document.querySelector("#twelve-hour");
-    let twelveHourTime = response.data.list[3].dt_txt.slice(10, 16);
-    twelveHour.innerHTML = `${twelveHourTime}`;
-    let twelveHourTemp = document.querySelector("#twelve-hour-temp");
-    let forecastTwelveHour = response.data.list[3].main.temp;
-    let twelveHourRounded = Math.round(forecastTwelveHour);
-    twelveHourTemp.innerHTML = `${twelveHourRounded}℃`;
-
-    let fifteenHour = document.querySelector("#fifteen-hour");
-    let fifteenHourTime = response.data.list[4].dt_txt.slice(10, 16);
-    fifteenHour.innerHTML = `${fifteenHourTime}`;
-    let fifteenHourTemp = document.querySelector("#fifteen-hour-temp");
-    let forecastFifteenHour = response.data.list[4].main.temp;
-    let fifteenHourRounded = Math.round(forecastFifteenHour);
-    fifteenHourTemp.innerHTML = `${fifteenHourRounded}℃`;
-
-    let eighteenHour = document.querySelector("#eighteen-hour");
-    let eighteenHourTime = response.data.list[5].dt_txt.slice(10, 16);
-    eighteenHour.innerHTML = `${eighteenHourTime}`;
-    let eighteenHourTemp = document.querySelector("#eighteen-hour-temp");
-    let forecastEighteenHour = response.data.list[5].main.temp;
-    let eighteenHourRounded = Math.round(forecastEighteenHour);
-    eighteenHourTemp.innerHTML = `${eighteenHourRounded}℃`;
-  }
-  axios.get(`${apiURLForecast}&appid=${apiKeyCurrent}`).then(forecast);
 }
 
 function showCurrentWeather() {

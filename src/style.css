@@ -119,23 +119,11 @@ input[type="submit"]:focus {
 
 .days p,
 .temp p,
-.col-2 p,
-.forecast-date,
-.forecast-temp-max,
-.forecast-temp-min {
+.col-2 p {
   color: #000014;
   font-family: "Lobster", cursive;
   font-size: 14px;
   text-align: center;
-}
-
-.forecast-temp-min {
-  opacity: 0.5;
-}
-
-.forecast {
-  margin-top: 10px;
-  margin-bottom: -10px;
 }
 
 .col-2 i {
