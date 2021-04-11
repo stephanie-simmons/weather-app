@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lobster&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link href="src/style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/ee5c9f3d68.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -54,11 +54,7 @@
                             </div>
                             <div class="col-6 display-right">
                                 <p>
-                                    <img 
-                                        src="" 
-                                        alt=""
-                                        id ="main-icon"
-                                    />
+                                    <img src="" alt="" id="main-icon" />
                                 </p>
                             </div>
                         </div>
@@ -69,87 +65,28 @@
                         </div>
                     </div>
                 </div>
-                <footer>
-                    <div class="row days">
-                    <div class="col-2">
-                        <p id="three-hour"></p>
-                    </div>
-                    <div class="col-2">
-                        <p id="six-hour"></p>
-                    </div>
-                    <div class="col-2">
-                        <p id="nine-hour"></p>
-                    </div>
-                    <div class="col-2">
-                        <p id="twelve-hour"></p>
-                    </div>
-                    <div class="col-2">
-                        <p id="fifteen-hour"></p>
-                    </div>
-                    <div class="col-2">
-                        <p id="eighteen-hour"></p>
-                    </div>
-                    </div>
-
+                <div class="forecast">
                     <div class="row">
-                        <div class="col-2">
-                            <p>
-                                <i class="fas fa-cloud-sun-rain"></i>
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                <i class="fas fa-cloud-showers-heavy"></i>
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                <i class="fas fa-cloud"></i>
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                <i class="far fa-sun"></i>
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                <i class="fas fa-cloud-sun"></i>
-                            </p>
-                        </div>
-                        <div class="col-2">
-                            <p>
-                                <i class="fas fa-cloud-sun-rain"></i>
-                            </p>
+                        <div class="col-2 forecast">
+                            <div class="forecast-date"> Mon </div>
+                                <img 
+                                src="http://openweathermap.org/img/wn/50d@2x.png" 
+                                alt=""
+                                width="42"
+                                />
+                                <div class="forecast-temperatures">
+                                    <span class="forecast-temp-max">
+                                        18°
+                                    </span> |
+                                    <span class="forecast-temp-min">
+                                        12°
+                                    </span>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row temp">
-                        <div class="col-2">
-                            <p id="three-hour-temp"></p>
-                            <span class="degrees"></span>
-                        </div>
-                        <div class="col-2">
-                            <p id="six-hour-temp"></p>
-                            <span class="degrees"></span>
-                        </div>
-                        <div class="col-2">
-                            <p id="nine-hour-temp"></p>
-                            <span class="degrees"></span>
-                        </div>
-                        <div class="col-2">
-                            <p id="twelve-hour-temp"></p>
-                            <span class="degrees"></span>
-                        </div>
-                        <div class="col-2">
-                            <p id="fifteen-hour-temp"></p>
-                            <span class="degrees"></span>
-                        </div>
-                        <div class="col-2">
-                            <p id="eighteen-hour-temp"></p>
-                            <span class="degrees"></span>
-                        </div>
-                    </div>
+                </div>
+                <footer>
+                   
                 </footer>
             </div>
         </div>
@@ -157,7 +94,8 @@
     </body>
 </div>
 <footer>
-    <a href="https://github.com/stephanie-simmons/weather-app.git" class="github-link" target="_blank">Github Repository</a>
+    <a href="https://github.com/stephanie-simmons/weather-app.git" class="github-link" target="_blank">Github
+        Repository</a>
 </footer>
 
 </html>
